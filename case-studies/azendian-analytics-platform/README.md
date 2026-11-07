@@ -3,9 +3,9 @@
 [![Case Study](https://img.shields.io/badge/Type-Engineering_Case_Study-111827?style=flat-square)](#executive-summary)
 [![Domain](https://img.shields.io/badge/Domain-Education_Analytics-0EA5E9?style=flat-square)](#business-problem)
 [![Focus](https://img.shields.io/badge/Focus-Data_Modelling-10B981?style=flat-square)](#data-modelling)
-[![Focus](https://img.shields.io/badge/Focus-ETL_Planning-F59E0B?style=flat-square)](#etl-planning-and-handoff)
+[![Focus](https://img.shields.io/badge/Focus-SQL_ETL-F59E0B?style=flat-square)](#etl-development-and-handoff)
 
-**Organisation:** Azendian Solutions · **Role:** Data Engineering Intern · **Project:** Analytics platform design for higher-education use cases
+**Organisation:** Azendian Solutions · **Role:** Data Engineering Intern · **Project:** Analytics platform design and ETL for higher-education use cases
 
 > [!IMPORTANT]
 > This case study is rewritten from an internship report as a concise engineering portfolio piece. It describes system design and my contribution at a high level; client-specific data, detailed schemas, and proprietary artefacts are intentionally excluded.
@@ -20,9 +20,9 @@ I contributed to the design of an analytics platform intended to provide a more 
 - **Model Performance** — monitoring model health, evaluation indicators, and data drift;
 - **Module Monitoring** — helping lecturers and module leaders examine module, cohort, and student performance.
 
-My work sat between requirements discovery and implementation. I translated dashboard concepts into attribute requirements, designed and refined physical data models, maintained data dictionaries and design-change records, mapped source fields to targets, documented transformation logic, and produced data-flow artefacts for the development team’s ETL implementation.
+My work sat between requirements discovery and implementation. I translated dashboard concepts into attribute requirements, designed and refined physical data models, maintained data dictionaries and design-change records, mapped source fields to targets, documented transformation logic, and developed SQL-based ETL workflows and reporting datasets that implemented those mappings, working with the development team.
 
-The result was not a standalone application I built end to end. It was a set of reviewed, traceable design specifications that connected stakeholder questions to dashboards, schemas, and downstream data pipelines.
+The result was a set of reviewed, traceable design specifications, and the SQL ETL that implemented them, connecting stakeholder questions to dashboards, schemas, and downstream data pipelines.
 
 ## Business Problem
 
@@ -46,11 +46,11 @@ Clear ownership mattered because the project involved analytics, design, and dev
 | Design and refine data models for assigned use cases | Develop the predictive analytics model |
 | Create data dictionaries and design-change records | Build production dashboard visualisations |
 | Map dashboard elements to target attributes | Implement metadata and presentation layers |
-| Specify source-to-target mappings and transformations | Develop and run production ETL workflows |
+| Specify source-to-target mappings and develop SQL-based ETL workflows and reporting datasets | Run production ETL workflows |
 | Visualise data dependencies and support handoff | Implement infrastructure and databases |
 
 > [!NOTE]
-> My contribution was the **design contract** for later implementation. I did not claim production ETL or dashboard development; I made those implementation tasks more explicit and traceable.
+> My contribution was the **design contract** and the SQL ETL that implemented it. Production dashboard visualisations were built by an adjacent team.
 
 ## Analytics Platform Design
 
@@ -66,7 +66,7 @@ flowchart LR
     end
 
     MAP[Source-to-target mappings<br/>and transformation rules]
-    ETL[ETL workflows<br/>implemented by development team]
+    ETL[SQL ETL workflows<br/>developed with the development team]
 
     subgraph Platform[Analytics platform]
         CORE[Detailed analytical storage]
@@ -136,7 +136,7 @@ flowchart TD
     H --> I[Review with design and analytics teams]
     I --> J{Gap or defect found?}
     J -- Yes --> B
-    J -- No --> K[Approved input to mapping and ETL planning]
+    J -- No --> K[Approved input to mapping and ETL development]
 ```
 
 Three details consistently required care:
@@ -160,7 +160,7 @@ A simplified mapping contract looked like this:
 | Learning activity | Access events | Count or duration calculation | Event completeness and time window |
 | Model health status | Evaluation metrics | Threshold-based classification | Threshold definition and model run |
 
-I documented transformation intent rather than implementing the production jobs. Even a simple aggregation needed an explicit business definition: whether it was a raw count or distinct count, the grouping level, the time window, and the handling of missing data could all change the dashboard result.
+I documented transformation intent before implementing it in SQL. Even a simple aggregation needed an explicit business definition: whether it was a raw count or distinct count, the grouping level, the time window, and the handling of missing data could all change the dashboard result.
 
 ## Dashboard Mapping
 
@@ -176,9 +176,9 @@ The three use cases placed different demands on the model:
 
 This work taught me that dashboards are data contracts in disguise. A polished mock-up can still be technically incomplete until every mark, filter, and interaction has a defined source and grain.
 
-## ETL Planning and Handoff
+## ETL Development and Handoff
 
-The development team implemented the ETL workflows; I prepared the mappings and flows they needed to do that accurately.
+I developed SQL-based ETL workflows and reporting datasets from these mappings, working with the development team, and prepared the data-flow artefacts they needed to extend the pipelines accurately.
 
 ```mermaid
 flowchart LR
@@ -205,6 +205,7 @@ I also delivered knowledge-transfer sessions on how to interpret the data dictio
 
 | Technology | How I used it |
 |---|---|
+| **SQL** | Wrote ETL workflows and reporting datasets that implemented the source-to-target mappings |
 | **erwin Data Modeler** | Designed and reviewed physical models, tables, keys, relationships, and attributes |
 | **Microsoft Excel** | Maintained attribute lists, data dictionaries, change trackers, dashboard mappings, and source-to-target mappings |
 | **MicroStrategy** | Interpreted dashboard mock-ups and mapped their analytical requirements |
@@ -218,6 +219,7 @@ I also delivered knowledge-transfer sessions on how to interpret the data dictio
 - Documented attribute meaning, types, keys, nullability, sources, targets, and transformation logic.
 - Created dashboard mappings that connected every visual requirement to modelled data.
 - Produced source-to-target mappings and data-flow diagrams for ETL implementation.
+- Developed SQL-based ETL workflows and reporting datasets that implemented the mappings.
 - Maintained design-change traceability as requirements and naming evolved.
 - Participated in iterative model reviews and corrected modelling gaps before downstream implementation.
 - Explained design artefacts to the development team during knowledge transfer.

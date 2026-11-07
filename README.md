@@ -18,7 +18,7 @@ This repository is a recruiter-friendly index of selected engineering work. Each
 |---|---|---|---|
 | **InternSearch** | Multi-source ingestion, configurable scoring, KPI monitoring, and automated reporting | Python, SQLite, REST APIs, GitHub Actions, Docker, pytest | [View repository](https://github.com/jordecoder/internsearch) |
 | **Oraphim** | Full-stack maritime investigation platform with spatial data and analyst workflows | SvelteKit, FastAPI, PostgreSQL/PostGIS, MongoDB, MapLibre GL | [Team repository (access-controlled)](https://github.com/ncht88/2003_oraphim) |
-| **Analytics Platform for Educational Institutions** | Requirements-to-data traceability, physical data modelling, dashboard mapping, and ETL planning | erwin Data Modeler, MicroStrategy, Excel, draw.io | [Read case study](case-studies/azendian-analytics-platform/README.md) |
+| **Analytics Platform for Educational Institutions** | Requirements-to-data traceability, physical data modelling, dashboard mapping, and SQL ETL development | SQL, erwin Data Modeler, MicroStrategy, Excel, draw.io | [Read case study](case-studies/azendian-analytics-platform/README.md) |
 | **Agentic RAG Platform** | Semantic retrieval, query rewriting, evidence filtering, synthesis, and report generation | GPT-4o, LlamaIndex, LanceDB, Gradio | [Read case study](case-studies/nvidia-agentic-rag/README.md) |
 
 ## Engineering Through-Line
@@ -47,7 +47,7 @@ Across these projects, I repeatedly work at the boundary between data and produc
 | Area | What I have built or practised |
 |---|---|
 | **AI engineering** | Agentic RAG workflows, semantic retrieval, query refinement, relevance filtering, evidence synthesis |
-| **Data engineering** | Heterogeneous source ingestion, normalization, data mapping, ETL specifications, relational and spatial storage |
+| **Data engineering** | Heterogeneous source ingestion, normalization, data mapping, ETL specifications and SQL ETL development, relational and spatial storage |
 | **Analytics engineering** | Dimensional thinking, dashboard-to-attribute mapping, KPI definitions, model-monitoring data structures |
 | **Backend engineering** | Python services and pipelines, FastAPI APIs, authentication, data access, scheduled automation |
 | **Product delivery** | Requirements discovery, iterative design reviews, cross-team handoffs, technical documentation |
@@ -56,7 +56,7 @@ Across these projects, I repeatedly work at the boundary between data and produc
 
 For a quick scan, start with the project table above. For deeper technical reasoning:
 
-1. Read the [Azendian analytics case study](case-studies/azendian-analytics-platform/README.md) for requirements, modelling, and ETL design.
+1. Read the [Azendian analytics case study](case-studies/azendian-analytics-platform/README.md) for requirements, modelling, and ETL design and development.
 2. Read the [NVIDIA RAG case study](case-studies/nvidia-agentic-rag/README.md) for AI retrieval and evidence-synthesis work.
 3. Open [InternSearch](https://github.com/jordecoder/internsearch) for a self-contained Python data pipeline.
 4. Open [Oraphim](https://github.com/ncht88/2003_oraphim) for a larger full-stack, team-based system.
