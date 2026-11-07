@@ -5,7 +5,7 @@
 [![Focus](https://img.shields.io/badge/Focus-Data_Modelling-10B981?style=flat-square)](#data-modelling)
 [![Focus](https://img.shields.io/badge/Focus-ETL_Planning-F59E0B?style=flat-square)](#etl-planning-and-handoff)
 
-**Organisation:** Azendian Solutions · **Role:** Data modelling and analytics design intern · **Project:** Analytics platform design for higher-education use cases
+**Organisation:** Azendian Solutions · **Role:** Data Engineering Intern · **Project:** Analytics platform design for higher-education use cases
 
 > [!IMPORTANT]
 > This case study is rewritten from an internship report as a concise engineering portfolio piece. It describes system design and my contribution at a high level; client-specific data, detailed schemas, and proprietary artefacts are intentionally excluded.

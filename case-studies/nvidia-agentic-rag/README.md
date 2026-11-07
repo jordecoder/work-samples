@@ -5,14 +5,14 @@
 [![Model](https://img.shields.io/badge/Model-GPT--4o-10B981?style=flat-square)](#technical-contributions)
 [![Vector Store](https://img.shields.io/badge/Vector_Store-LanceDB-0EA5E9?style=flat-square)](#technical-contributions)
 
-**Organisation:** SIT-NVIDIA AI Centre · **Role:** Student Assistant · **Focus:** Agentic retrieval, evidence processing, and investigation-report generation
+**Organisation:** NVIDIA (SIT-NVIDIA AI Centre) · **Role:** AI Engineer Intern · **Focus:** Agentic retrieval, evidence processing, and investigation-report generation
 
 > [!IMPORTANT]
 > This is a deliberately sanitised case study. It describes the engineering approach at a high level and does not include confidential datasets, prompts, configurations, evaluation results, deployment details, or partner architecture.
 
 ## Executive Summary
 
-I built an **Agentic Retrieval-Augmented Generation (RAG) platform** as a Student Assistant at the SIT-NVIDIA AI Centre. The platform combined GPT-4o, LlamaIndex, LanceDB, and Gradio to help users investigate questions against an approved knowledge collection and turn retrieved evidence into a structured report.
+I built an **Agentic Retrieval-Augmented Generation (RAG) platform** as an AI Engineer Intern with NVIDIA at the SIT-NVIDIA AI Centre. The platform combined GPT-4o, LlamaIndex, LanceDB, and Gradio to help users investigate questions against an approved knowledge collection and turn retrieved evidence into a structured report.
 
 The core engineering work went beyond a single retrieve-then-answer call. The workflow refined the user’s question, performed semantic retrieval, filtered results for relevance, synthesised evidence, and generated an investigation report. The agentic structure made each reasoning stage explicit and allowed the system to treat retrieval quality as part of the application rather than as an invisible database lookup.
 
